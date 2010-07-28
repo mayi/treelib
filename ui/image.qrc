@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="img">
+    <file>res/icons/batch.png</file>
+    <file>res/icons/treeleaf.png</file>
+    <file>res/icons/chinese.png</file>
+    <file>res/icons/latin.png</file>
+  </qresource>
+</RCC>
