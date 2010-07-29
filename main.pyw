@@ -91,7 +91,6 @@ class MainWindow(QtGui.QMainWindow, Ui_MainWindow):
     
     #将数据放入表格
     def putDataIntoTable(self, data):
-        #self.table.setSortingEnabled(False)
         self.table.clearContents()
         count = len(data)
         self.statusbar.showMessage(QtCore.QString(unicode('搜索结果：' + str(count) + '条记录', 'utf-8')))
@@ -130,7 +129,6 @@ class MainWindow(QtGui.QMainWindow, Ui_MainWindow):
             self.table.setItem(row, 29, QtGui.QTableWidgetItem(d['zrfbq']))
             row = row + 1
         self.table.resizeColumnsToContents()
-        #self.table.setSortingEnabled(True)
 
     #表格内容复制
     def copyCells(self):
